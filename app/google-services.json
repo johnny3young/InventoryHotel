@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "684076546611",
+    "firebase_url": "https://inventoryhotel.firebaseio.com",
+    "project_id": "inventoryhotel",
+    "storage_bucket": "inventoryhotel.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:684076546611:android:24246c37563670dc",
+        "android_client_info": {
+          "package_name": "com.ejemplo.app.inventoryhotel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "684076546611-rgg110ncu6o8piu9mgnp0ha22a7mltcl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ejemplo.app.inventoryhotel",
+            "certificate_hash": "c4bd4159c84986b61b205079d06280f329c1d53f"
+          }
+        },
+        {
+          "client_id": "684076546611-s21jdht2tqpceu7ee4ivqp94o2ficjhg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb7lCh0XFlfkQQl6BQoG2G_FRMLJv476s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "684076546611-s21jdht2tqpceu7ee4ivqp94o2ficjhg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
