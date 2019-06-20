@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "684076546611-qsanvurerp3l754q16d1v1qc6gik8ep9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ejemplo.app.inventoryhotel",
+            "certificate_hash": "6f1ccaffba151ca971c5dd3fbe1f24fa778571da"
+          }
+        },
+        {
           "client_id": "684076546611-rgg110ncu6o8piu9mgnp0ha22a7mltcl.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
