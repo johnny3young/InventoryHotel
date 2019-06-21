@@ -3,19 +3,22 @@ package com.ejemplo.app.inventoryhotel
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.activity_agregar.*
 
 class AgregarActivity : AppCompatActivity (){
+
+    lateinit var ref : DatabaseReference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agregar)
 
+        ref = FirebaseDatabase.getInstance().getReference("Pendientes")
+
         btn_Agregar_Hab.setOnClickListener {
             guardarHabitacion()
         }
-
     }
 
     private fun guardarHabitacion() {
@@ -35,12 +38,11 @@ class AgregarActivity : AppCompatActivity (){
             return
         }
 
-        val ref = FirebaseDatabase.getInstance().getReference("Pendientes")
         val habId = ref.push().key
 
-        val habitacion = Habitacion(habId!!,hab,tel,mac,ap,ubAp,mOrificio,extTv,extMesa,extBano,observaciones)
+        val habitacion = Habitacion(habId,hab,tel,mac,ap,ubAp,mOrificio,extTv,extMesa,extBano,observaciones)
 
-        ref.child(habId).setValue(habitacion).addOnCompleteListener{
+        ref.child(habId!!).setValue(habitacion).addOnCompleteListener{
             Toast.makeText(applicationContext,"Habitación guardada exitosamente",Toast.LENGTH_LONG).show()
         }
 
