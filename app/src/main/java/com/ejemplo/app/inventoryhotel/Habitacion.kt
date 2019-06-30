@@ -1,17 +1,15 @@
 package com.ejemplo.app.inventoryhotel
 
-data class Habitacion(
+ class Habitacion constructor(
     val id: String?,
-    val Hab: String,
-    val Tel: String,
-    val MAC: String,
-    val AccessPoint: String,
-    val Ubicacion: String,
-    val MesaOrificio: String,
-    val ExtTV: String,
-    val ExtMesa: String,
-    val ExtBano: String,
-    val Observaciones: String
-) {
-    constructor() : this ("","","","","","","","","","","")
-}
+    val hab: String,
+    val tel: String,
+    val mac: String,
+    val accesspoint: String,
+    val ubicacion: String,
+    val mesaorificio: String,
+    val exttv: String,
+    val extmesa: String,
+    val extbano: String,
+    val observaciones: String
+) {constructor() : this("","","","","","","","","","","") }

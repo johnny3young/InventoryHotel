@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         btn_Consultar.setOnClickListener(){
             Log.d("MainActivity","Presionaste el botón consultar")
 

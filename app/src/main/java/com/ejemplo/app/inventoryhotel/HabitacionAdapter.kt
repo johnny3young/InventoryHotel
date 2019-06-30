@@ -5,15 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import kotlinx.android.synthetic.main.activity_agregar.*
-import kotlinx.android.synthetic.main.activity_agregar.view.*
 import kotlinx.android.synthetic.main.habitaciones.view.*
-import java.sql.RowId
+
 
 class HabitacionAdapter (val mCtx : Context, val layoutResId : Int, val habitacionList: List<Habitacion>)
     :ArrayAdapter<Habitacion> (mCtx, layoutResId, habitacionList)
 {
+    //se genera este método de forma automatica con el método GETVIEW
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+
         val layoutInflater : LayoutInflater = LayoutInflater.from(mCtx)
         val view : View  = layoutInflater.inflate(layoutResId,null)
 
@@ -30,16 +30,16 @@ class HabitacionAdapter (val mCtx : Context, val layoutResId : Int, val habitaci
 
         val habitacion = habitacionList[position]
 
-        hab_Consultar.text = habitacion.Hab
-        tel_Consultar.text = habitacion.Tel
-        mac_Consultar.text = habitacion.MAC
-        ap_Consultar.text = habitacion.AccessPoint
-        ubAp_Consultar.text = habitacion.Ubicacion
-        mOrificio_Consultar.text = habitacion.MesaOrificio
-        extTv_Consultar.text = habitacion.ExtTV
-        extMesa_Consultar.text = habitacion.ExtMesa
-        extBano_Consultar.text = habitacion.ExtBano
-        observaciones_Consultar.text = habitacion.Observaciones
+        hab_Consultar.text = habitacion.hab
+        tel_Consultar.text = habitacion.tel
+        mac_Consultar.text = habitacion.mac
+        ap_Consultar.text = habitacion.accesspoint
+        ubAp_Consultar.text = habitacion.ubicacion
+        mOrificio_Consultar.text = habitacion.mesaorificio
+        extTv_Consultar.text = habitacion.exttv
+        extMesa_Consultar.text = habitacion.extmesa
+        extBano_Consultar.text = habitacion.extbano
+        observaciones_Consultar.text = habitacion.observaciones
 
         return view
     }
