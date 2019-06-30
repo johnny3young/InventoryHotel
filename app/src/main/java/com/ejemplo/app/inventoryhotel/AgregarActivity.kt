@@ -15,7 +15,7 @@ class AgregarActivity : AppCompatActivity (){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agregar)
 
-        ref = FirebaseDatabase.getInstance().getReference("Pendientes")
+        ref = FirebaseDatabase.getInstance().getReference("Hotel/Milla")
 
         myRef = FirebaseDatabase.getInstance().getReference("Pruebajajajaaja")
         myRef.setValue("Esto es una prueba sin presionar ningún botón, SOLO abriendo la app en guardar")
@@ -26,10 +26,10 @@ class AgregarActivity : AppCompatActivity (){
     }
 
     private fun guardarHabitacion() {
-        val hab = editText_Habitacion.text.toString().trim()
+        val hab: String = editText_Habitacion.text.toString().trim()
         val tel = editText_Cantidad_Tel.text.toString().trim()
         val mac = editText_MAC_Serial.text.toString().trim()
-        val accesspoint = editText_AP.text.toString().trim()
+        val ap = editText_AP.text.toString().trim()
         val ubicacion = editText_Ubicacion_AP.text.toString().trim()
         val mesaorificio = editText_Mesa_Con_Orificio.text.toString().trim()
         val exttv = editText_Ext_TV.text.toString().trim()
@@ -42,11 +42,11 @@ class AgregarActivity : AppCompatActivity (){
             return
         }
 
-        val habId = ref.push().key
+        //val hab: String = ref.push().key
 
-        val habitacion = Habitacion(habId,hab,tel,mac,accesspoint,ubicacion,mesaorificio,exttv,extmesa,extbano,observaciones)
+        val habitacion = Habitacion(hab,tel,mac,ap,ubicacion,mesaorificio,exttv,extmesa,extbano,observaciones)
 
-        ref.child(habId!!).setValue(habitacion).addOnCompleteListener{
+        ref.child(hab!!).setValue(habitacion).addOnCompleteListener{
             Toast.makeText(applicationContext,"Habitación guardada exitosamente",Toast.LENGTH_LONG).show()
         }
 

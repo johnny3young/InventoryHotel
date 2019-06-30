@@ -3,14 +3,13 @@ package com.ejemplo.app.inventoryhotel
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.ListView
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.activity_consultar.*
 
 class ConsultarActivity : AppCompatActivity() {
 
     lateinit var habitacionList: MutableList<Habitacion>
     lateinit var ref : DatabaseReference
-    lateinit var listView: ListView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,9 +17,8 @@ class ConsultarActivity : AppCompatActivity() {
 
         //Si agrego "Habitacion" adentro de "MutableListOf" aparece una vista adicional cuando muestro los datos
         habitacionList = mutableListOf()
-        listView = findViewById(R.id.listView_Consultar)
-        ref = FirebaseDatabase.getInstance().getReference("Pendientes")
 
+         ref = FirebaseDatabase.getInstance().getReference("Hotel/Milla")
 
         //Leyendo desde la DB
         ref.addValueEventListener(object : ValueEventListener {
@@ -45,7 +43,7 @@ class ConsultarActivity : AppCompatActivity() {
                     }
 
                     var adapter = HabitacionAdapter(this@ConsultarActivity,R.layout.habitaciones, habitacionList)
-                    listView.adapter = adapter
+                    listView_Consultar.adapter = adapter
                 }
 
             }

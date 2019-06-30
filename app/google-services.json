@@ -1,50 +1,42 @@
 {
   "project_info": {
-    "project_number": "684076546611",
-    "firebase_url": "https://inventoryhotel.firebaseio.com",
-    "project_id": "inventoryhotel",
-    "storage_bucket": "inventoryhotel.appspot.com"
+    "project_number": "167788740359",
+    "firebase_url": "https://inventario-it-habitaciones.firebaseio.com",
+    "project_id": "inventario-it-habitaciones",
+    "storage_bucket": "inventario-it-habitaciones.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:684076546611:android:24246c37563670dc",
+        "mobilesdk_app_id": "1:167788740359:android:0596a3cdf19b0558",
         "android_client_info": {
           "package_name": "com.ejemplo.app.inventoryhotel"
         }
       },
       "oauth_client": [
         {
-          "client_id": "684076546611-qsanvurerp3l754q16d1v1qc6gik8ep9.apps.googleusercontent.com",
+          "client_id": "167788740359-q62l0go20kcm0v8n8s5qcd0ovv8pg9po.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.ejemplo.app.inventoryhotel",
+            "package_name": "com.black3.app.inventoryhotel",
             "certificate_hash": "6f1ccaffba151ca971c5dd3fbe1f24fa778571da"
           }
         },
         {
-          "client_id": "684076546611-rgg110ncu6o8piu9mgnp0ha22a7mltcl.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.ejemplo.app.inventoryhotel",
-            "certificate_hash": "c4bd4159c84986b61b205079d06280f329c1d53f"
-          }
-        },
-        {
-          "client_id": "684076546611-s21jdht2tqpceu7ee4ivqp94o2ficjhg.apps.googleusercontent.com",
+          "client_id": "167788740359-es4u3mo2018fs6prtm96ahtft5u15vlm.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCb7lCh0XFlfkQQl6BQoG2G_FRMLJv476s"
+          "current_key": "AIzaSyCrv52q4wAl3YXdBM7iqW_Ti5bMT1NFvL4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "684076546611-s21jdht2tqpceu7ee4ivqp94o2ficjhg.apps.googleusercontent.com",
+              "client_id": "167788740359-es4u3mo2018fs6prtm96ahtft5u15vlm.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

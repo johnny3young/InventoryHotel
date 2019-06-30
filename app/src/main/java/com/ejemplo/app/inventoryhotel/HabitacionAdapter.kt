@@ -33,7 +33,7 @@ class HabitacionAdapter (val mCtx : Context, val layoutResId : Int, val habitaci
         hab_Consultar.text = habitacion.hab
         tel_Consultar.text = habitacion.tel
         mac_Consultar.text = habitacion.mac
-        ap_Consultar.text = habitacion.accesspoint
+        ap_Consultar.text = habitacion.ap
         ubAp_Consultar.text = habitacion.ubicacion
         mOrificio_Consultar.text = habitacion.mesaorificio
         extTv_Consultar.text = habitacion.exttv
